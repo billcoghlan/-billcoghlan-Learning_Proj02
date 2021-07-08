@@ -1,0 +1,478 @@
+/* GLOBAL */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Change this*/
+body {
+    background: #ffffff;
+    font-family: 'Roboto', 'san-serif';
+    font-size: 14px;
+
+    /* add line size / spacing */
+}
+
+@media screen and (max-width: 850px) {
+    body {
+           font-size: 13px;
+        } 
+    }
+
+
+
+main {
+    width: 90%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 850px) {
+    main {
+           width: 94%;
+        } 
+    }
+
+header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 100%
+}
+
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+@media screen {
+    section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+p {
+    line-height: 24px;
+}
+
+
+@media screen and (max-width: 850px){
+    h1 {font-size: 1.6rem;
+    }
+
+    h2 {font-size: 1.5rem;
+    }
+
+    h3 {font-size: 1.3rem;
+    }
+
+    h4 {font-size: 1.2rem;
+    }
+
+    p {line-height: 20px;
+    }
+}
+
+
+
+/* NAVIGATION */
+
+.nav-bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1% 3%;  
+
+  background: rgb(131, 151, 151);
+}
+
+.nav-bar > .top-nav-logo {
+    width: 14%;
+    align: left;
+}
+
+.nav-bar > .menu-container {
+    display: flex;
+    min-width: 40%;
+    justify-content: space-evenly;
+    text-align-last: right;
+}
+
+.menu-container > a{
+    text-decoration: none; /* removes underlines from nav menu */
+    color: #FFF;
+}
+
+@media screen and (max-width: 850px) {
+    .nav-bar > .menu-container {
+        justify-content: space-between;
+        min-width: 70%;
+        
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .menu-container{
+        min-width: 80%;
+    }
+}
+
+
+
+/*Footer*/
+#footer {
+  display: flex;
+  position:relative;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background:  rgb(131, 151, 151);
+}
+
+.footer-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#footer-text-block{
+    padding-top: 1%;
+    color: #FFF;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-blanc{
+    position: absolute;
+    align: left;
+    width: 3%;
+    margin-left: 2%;
+}
+
+.icon {
+    max-width: 2%;
+    padding-bottom: 1%;
+    margin: 0 1%;
+}
+
+@media screen and (max-width: 850px){
+       #footer-text-block > p {
+        font-size: 0.7rem;
+     }
+}
+
+@media screen and (max-width: 850px){
+    .icon {
+        max-width: 5%;
+  }
+}
+
+
+
+/*SPECIFIC*/
+
+/*Masthead*/
+.masthead {
+    display: flex;
+    justify-content: center;
+}
+
+#masthead-logo {
+    width: 20%;
+}
+
+
+/* Hero Image */
+.hero-image {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 5%;
+    margin-top: 0;
+}
+
+/* Heading Text Inside Hero Image */
+.hero-text {
+    justify-content: center;
+    position: absolute;
+}
+
+.hero-text > h1 {
+    color: #ffffff;
+    text-shadow: darkgray;
+    text-transform: uppercase;
+    top: 20%;
+    padding-top: 5%;
+}
+
+
+/* Cards */
+#cards {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-items: stretch; /* split from combining on single line above */
+  flex-direction: row;
+  padding: 3%;
+}
+
+@media screen and (max-width: 850px) {
+    #cards {
+        flex-wrap: wrap;       
+    }
+}
+
+
+
+.card {
+  /* position: /*static*/
+  background: rgba(131, 151, 151, 0.315);
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin: 2%;
+} 
+
+@media screen and (max-width: 850px)  {
+    .card {
+        padding: 2%, 0;
+        margin: 2%; 0;
+    }
+}
+
+.card-image-block {
+  display: flex; 
+  justify-content: center;
+  max-width: 260px;
+}
+
+
+.card-image {
+  width: 30%;
+  margin: 10%;
+}
+
+.card-text-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 260px;
+    color: #FFF;
+}
+
+
+/* Button */
+.button-block{
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+}
+
+.button{
+  color: #FFF;
+  background-color:  rgb(131, 151, 151);
+  font-weight: bold;
+  padding: 20px;
+  margin: 0 340px;
+  text-align: center;
+  border: 2px solid  rgb(131, 151, 151);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 850px) {
+    .button {
+        margin: 0 25%;
+    }
+}
+
+
+
+
+/* Open Sign and text */
+#votre-cafe {
+    display: flex;
+    justify-content: left;
+    align-items: center; /*this centered the text block verticly against the image*/
+}
+
+#open{
+    width: 10%;
+}
+
+#text-block {
+    margin-left: 3%;
+}
+
+
+/* Daily Summary and Daily Description in Columns and Rows */
+/* This wraps correctly to column when shrinking display */
+
+#day-events{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.summary {
+  margin: 10% 0;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+
+/* Centered Text Sections */
+.center-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/*ABOUT US*/
+/* #about {
+} - not used */
+
+.about-block{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:stretch;
+    margin: 2%;
+}
+
+
+@media screen and (max-width: 850px)  {
+    .about-block{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
+.about-text{
+ width: 50%;
+}
+
+
+@media screen and (max-width: 850px)  {
+    .about-text{
+        width: 100%;
+    }
+}
+
+.picture-block{
+  width: 25%;
+  padding-bottom: 2%;
+}
+
+@media screen and (max-width: 850px)  {
+    .picture-block{
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*CONTACT US*/
+/* make the map relative as item one and reverse the flow so text can align to left edge and appear on top*/
+/*do I write the html up reversed?*/
+#contact{
+  display: flex;
+  position: relative; 
+  justify-content: center;
+  flex-direction: column;
+  max-width: 80%;
+  
+
+  /* these may work but I'm sure there's a better flexbox solution */
+  /* top: 25%; */
+  left: 18%;
+
+}
+
+.address-block{
+  max-width: 80%;
+}
+
+.tel-mail-block{
+    margin-top: 3%;
+  max-width: 80%;
+}
+
+#map-block{
+    margin-top: 5%;
+}
+
+#map {
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+
