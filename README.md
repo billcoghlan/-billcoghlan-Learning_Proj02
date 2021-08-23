@@ -1,2 +1,2 @@
-# Incode-Project1
+# Learning Project1
 HTML and CSS
